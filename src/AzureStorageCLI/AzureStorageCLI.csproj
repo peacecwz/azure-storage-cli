@@ -2,7 +2,22 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
+        <PackageVersion>1.0.1</PackageVersion>
         <TargetFramework>netcoreapp2.1</TargetFramework>
+        <PackageId>azure-storage-cli</PackageId>
+        <Authors>Baris Ceviz</Authors>
+        <Product>azure-storage-cli</Product>
+        <Description>Simple and Cross Platform Azure Storage CLI </Description>
+        <Copyright>Copyright @2018 Baris Ceviz</Copyright>
+        <PackageLicenseUrl>https://github.com/peacecwz/azure-storage-cli/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/peacecwz/azure-storage-cli</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/peacecwz/azure-storage-cli.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>azure, azure-storage, azure-storage-cli</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IsPackable>true</IsPackable>
+        <PackAsTool>true</PackAsTool>
+        <AssemblyName>as-cli</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

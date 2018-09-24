@@ -9,10 +9,10 @@ namespace AzureStorageCLI.Commands
     [HelpOption("-h|--help")]
     public class LoginCommand
     {
-        [Argument(0, "accountName")] 
+        [Argument(0, "accountName", "Azure Storage Account Name")]
         public string Name { get; set; }
-        
-        [Argument(1, "accountKey")] 
+
+        [Argument(1, "accountKey", "Azure Storage Account Key")]
         public string Key { get; set; }
 
         public int OnExecute(CommandLineApplication app)
@@ -22,7 +22,7 @@ namespace AzureStorageCLI.Commands
                 if (Settings.IsExist(Name))
                 {
                     Console.WriteLine($"Your {Name} is already exist");
-                    return (int)StatusCodes.UnknownError;
+                    return (int) StatusCodes.UnknownError;
                 }
 
                 var credentials = new StorageCredentials(Name, Key);
@@ -41,7 +41,7 @@ namespace AzureStorageCLI.Commands
                 Console.WriteLine("Unhandled exception");
             }
 
-            return (int)StatusCodes.Success;
+            return (int) StatusCodes.Success;
         }
     }
 }
