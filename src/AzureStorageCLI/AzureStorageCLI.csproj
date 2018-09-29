@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyName>as-cli</AssemblyName>
         <OutputType>Exe</OutputType>
         <PackageVersion>1.0.1</PackageVersion>
         <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -17,7 +18,6 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IsPackable>true</IsPackable>
         <PackAsTool>true</PackAsTool>
-        <AssemblyName>as-cli</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
@@ -30,6 +30,21 @@
 
     <ItemGroup>
       <None Remove="settings.json" />
+      <None Remove="tools\**" />
+      <None Remove="_rels\**" />
+      <None Remove="package\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="tools\**" />
+      <Compile Remove="_rels\**" />
+      <Compile Remove="package\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="tools\**" />
+      <EmbeddedResource Remove="_rels\**" />
+      <EmbeddedResource Remove="package\**" />
     </ItemGroup>
 
 </Project>
