@@ -28,7 +28,7 @@ You can add multiple Azure Storage account to CLI
 
 |Name|Required|Example|Description|
 |--------------|-------------|-------------|-------------------------|
-|accountName| True | `"5O7V8l4SeXTymVp3IesT9C"` | Azure Storage account name 
+|accountName| True | `"barisceviz"` | Azure Storage account name 
 |accountKey| True | `"5O7V8l4SeXTymVp3IesT9C"` | Azure Storage account key 
 
 ***Usage***  
