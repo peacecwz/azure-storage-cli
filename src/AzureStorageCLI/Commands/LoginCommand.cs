@@ -21,7 +21,7 @@ namespace AzureStorageCLI.Commands
             {
                 if (Settings.IsExist(Name))
                 {
-                    Console.WriteLine($"Your {Name} is already exist");
+                    Console.WriteLine($"Your {Name} already exists");
                     return (int) StatusCodes.UnknownError;
                 }
 

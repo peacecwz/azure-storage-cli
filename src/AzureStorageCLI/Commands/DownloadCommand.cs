@@ -73,7 +73,7 @@ namespace AzureStorageCLI.Commands
             }
             catch (Exception e)
             {
-                bool showError = Prompt.GetYesNo("Something an exception happend. Would you like to see detail?", true,
+                bool showError = Prompt.GetYesNo("Something happened. Would you like to see detail?", true,
                     ConsoleColor.Red);
 
                 if (showError)
@@ -126,7 +126,7 @@ namespace AzureStorageCLI.Commands
             }
             catch (Exception e)
             {
-                bool showError = Prompt.GetYesNo("Something an exception happend. Would you like to see detail?", true,
+                bool showError = Prompt.GetYesNo("something happened. Would you like to see detail?", true,
                     ConsoleColor.Red);
                 if (showError)
                 {
